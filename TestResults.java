@@ -18,7 +18,7 @@ public class TestResults {
 		Student[] stuList = new Student[50];
 		
 		
-		for(int i=0;i<=49;i++) {
+		for(int i=0;i<=10;i++) {
 			
 			stuList[i]= new Student(i,
 					names[getRandomNumber(0,names.length-1)],
@@ -30,6 +30,11 @@ public class TestResults {
 		}
 		
 		
+		System.out.println("Only Passed Students");
+		System.out.println("--------------------------------------------");
+		Results results = new Results();
+		
+		results.findPassResults(stuList);
 		
 		
 		
